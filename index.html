@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>shahmeer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: black;
+      overflow: hidden;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .text {
+      font-size: 60px;
+      font-weight: bold;
+      letter-spacing: 6px;
+      animation: glow 2s infinite alternate, colorShift 5s infinite linear;
+      text-shadow: 0 0 20px rgba(255,255,255,0.4);
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff;
+        transform: scale(1);
+      }
+      to {
+        text-shadow: 0 0 20px #00ffff, 0 0 40px #00ff00;
+        transform: scale(1.05);
+      }
+    }
+
+    @keyframes colorShift {
+      0% { color: #ff0080; }
+      25% { color: #00ffff; }
+      50% { color: #00ff00; }
+      75% { color: #ffff00; }
+      100% { color: #ff0080; }
+    }
+  </style>
+</head>
+<body>
+  <div class="text">sybau</div>
+</body>
+</html>
